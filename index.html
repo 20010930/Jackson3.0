@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson's World</title>
+    <!-- 引入Google字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arimo', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 导航栏 */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1rem;
+            text-align: right;
+            border-bottom: 1px solid #eee;
+        }
+
+        nav a {
+            color: #333;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-size: 0.9rem;
+        }
+
+        /* 主体布局 */
+        .container {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 4rem 2rem;
+        }
+
+        .content-left {
+            flex: 1;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .content-right {
+            flex: 1;
+            background: url('homepage_bg.jpg') no-repeat right center;
+            background-size: cover;
+            min-height: 80vh;
+        }
+
+        /* 名字和标语 */
+        .name {
+            font-family: 'Arimo', sans-serif;
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+        }
+
+        .tagline {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            letter-spacing: 1px;
+        }
+
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background: #f8f9fa;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#deep">Deep Stuff</a>
+        <a href="#random">Random Thoughts</a>
+    </nav>
+
+    <div class="container">
+        <div class="content-left">
+            <h1 class="name">Jackson</h1>
+            <p class="tagline">Explore. Move. Reflect.</p>
+        </div>
+        <div class="content-right"></div>
+    </div>
+
+    <footer>
+        Hit me up if you wanna talk about waves or Random Thoughts
+    </footer>
+</body>
+</html>
